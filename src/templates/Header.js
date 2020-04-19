@@ -9,9 +9,17 @@ const Header = () => {
                 </h1>
             </div>
             <div class="Header-nav">
-                <a href="#/about/">
-                    About
-                </a>
+                <div class="dark-mode">
+                    <button class="switch" id="switch">
+                        <span class="light">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <span class="dark">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+                </div>
+                <a href="#/about/">About</a>
             </div>
         </div>
     `;

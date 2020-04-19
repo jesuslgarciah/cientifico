@@ -1,8 +1,12 @@
 import getData from '../utils/getData'
+import getHash from '../utils/getHash'
 
 const Home = async () => {
-    const characters = await getData()
-    const view = `
+    const page = getHash()
+    console.log(page)
+    let characters = await getData(page)
+    console.log(characters)
+    let view = `
         <div class="Characters">
             ${characters.results.map(character => `
                 <article class="Characters-item">
