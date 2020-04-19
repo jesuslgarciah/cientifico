@@ -14,9 +14,32 @@ body {
   align-items: center;
 }
 
+.Header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .Header a {
+  margin-left: 25px;
   text-decoration: none;
   color: #15302C;
+}
+
+.switch {
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  outline: none;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
 }
 
 .Main {
@@ -24,6 +47,27 @@ body {
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+}
+
+.Footer-pages h3{
+  text-align: center;
+}
+
+.Footer-pages div{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.Footer-pages a {
+  color: #15302C;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Footer-pages a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .Characters {
