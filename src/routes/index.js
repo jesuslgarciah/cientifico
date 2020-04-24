@@ -12,7 +12,10 @@ const routes = {
     '/:pages': Home,
 }
 
+
+
 const router = async () => {
+    
     const header = null || document.getElementById('header')
     const content = null || document.getElementById('content')
     const footer = null || document.getElementById('footer')
@@ -20,9 +23,15 @@ const router = async () => {
     let route = await resolveRoutes(hash)
     let render = routes[route] ? routes[route] : Error404
 
-    content.innerHTML = await render()
     header.innerHTML = await Header()
-    footer.innerHTML = await Footer()
+    content.innerHTML = await render()
+    footer.innerHTML = await Footer()    
+
+    const buttonDarkMode = document.getElementById('switch')
+    buttonDarkMode.addEventListener("click", () => {
+        document.body.classList.toggle('dark')
+        buttonDarkMode.classList.toggle('active')
+    })
 }
 
 export default router;

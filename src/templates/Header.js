@@ -9,8 +9,8 @@ const Header = () => {
                 </h1>
             </div>
             <div class="Header-nav">
-                <div class="dark-mode">
-                    <button class="switch" id="switch">
+                <div>
+                    <button id="switch" class="switch">
                         <span class="light">
                             <i class="fas fa-sun"></i>
                         </span>

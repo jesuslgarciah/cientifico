@@ -10,14 +10,12 @@ const Footer = async () => {
 
     let a = 0;
     const view = `
-    <div class="Footer-main">
-        <div class="Footer-pages">
-            <h3>Pages</h3>
-            <div>
-                ${ancles.map(() => 
-                    `<a href="#/?page=${++a}/">${a}</a>`
-                ).join('')}
-            </div>
+    <div class="Footer-pages">
+        <h3>Pages</h3>
+        <div>
+            ${ancles.map(() => 
+                `<a href="#/?page=${++a}/">${a}</a>`
+            ).join('')}
         </div>
     </div>
     `;
