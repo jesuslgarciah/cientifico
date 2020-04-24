@@ -30,7 +30,6 @@ const router = async () => {
     const buttonDarkMode = document.getElementById('switch')
     buttonDarkMode.addEventListener("click", () => {
         document.body.classList.toggle('dark')
-        buttonDarkMode.classList.toggle('active')
     })
 }
 
