@@ -2,10 +2,10 @@ name: deploy-cientifico
 on:
   push:
     branches:
-      - main
+      - master
   pull-request:
     branches:
-      - main
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
