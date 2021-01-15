@@ -15,7 +15,7 @@ const routes = {
 
 
 const router = async () => {
-    
+
     const header = null || document.getElementById('header')
     const content = null || document.getElementById('content')
     const footer = null || document.getElementById('footer')
@@ -25,7 +25,7 @@ const router = async () => {
 
     header.innerHTML = await Header()
     content.innerHTML = await render()
-    footer.innerHTML = await Footer()    
+    footer.innerHTML = await Footer()
 
     const buttonDarkMode = document.getElementById('switch')
     buttonDarkMode.addEventListener("click", () => {
